@@ -1,16 +1,29 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 div {
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+div h3 {
+    background-color: #8ee0bb;
+    color: black;
+    width: 120px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-weight: 500;
 }
 
 result {
     display: flex;
     justify-content: center;
     width  : 100%;
-    font-size: 18px;
+    background-color: #FFFFFF;
 }
 
 earnings {
@@ -19,14 +32,20 @@ earnings {
 
 earnings item {
     display: flex;
+    background-color: #E7EAEC;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 8px;
 }
 
 earnings item * {
-    border : 1px solid black;
     display: table-cell;
-    padding: 4px 8px;
+    margin: 4px 8px;
     display: none;
     width  : 33.33%;
+    padding: 6px;
+    /* color: gray; */
+    font-weight: 500 !important;
 }
 
 earnings item ticker {
@@ -39,6 +58,10 @@ earnings item name {
 
 earnings item time {
     width: 100px !important;
+    background-color: #c1e9d7;
+    color: #068d55;
+    text-align: center;
+    border-radius: 30px;
 }
 
 earnings item ticker,

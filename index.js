@@ -9,7 +9,10 @@ app.use(express.static('public'));
 
 app.get('/', async (req, res) => {
     let URL = `https://api.benzinga.com/api/v2.1/calendar/earnings?parameters%5Bdate_from%5D=${today()}&parameters%5Bdate_to%5D=${today()}&token=79a4b64d9c9444ddaf5b3ab583ad1e12`
-    let html = `<link rel="stylesheet" href="style.css"><div id="date"><h3>Date: ${today()}</h3></div>`
+    let html = `<link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="style.css">
+                <div id="date"><h3>Date: ${today()}</h3></div>`
     fetch(URL)
         .then(response => response.text())
         .then(xml => {
