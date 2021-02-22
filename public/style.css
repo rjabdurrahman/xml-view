@@ -8,6 +8,7 @@ div {
     text-align: center;
     display: flex;
     justify-content: center;
+    background-color: #f2f7fb;
 }
 
 div h3 {
@@ -20,10 +21,10 @@ div h3 {
 }
 
 result {
+    background-color: #f2f7fb;
     display: flex;
     justify-content: center;
     width  : 100%;
-    background-color: #FFFFFF;
 }
 
 earnings {
@@ -32,10 +33,14 @@ earnings {
 
 earnings item {
     display: flex;
-    background-color: #E7EAEC;
+    /* background-color: #E7EAEC; */
+    background-color: #ffffff;
     margin: 8px;
     padding: 6px;
     border-radius: 8px;
+    -webkit-box-shadow: 0px 3px 41px -23px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 3px 41px -23px rgba(0,0,0,1);
+    box-shadow: 0px 3px 41px -23px rgba(0,0,0,1);
 }
 
 earnings item * {
