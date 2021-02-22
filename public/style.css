@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
@@ -51,14 +55,15 @@ earnings item * {
     padding: 6px;
     /* color: gray; */
     font-weight: 500 !important;
+    box-sizing: border-box;
 }
 
 earnings item ticker {
-    width: 120px;
+    width: 100px;
 }
 
 earnings item name {
-    width: 300px;
+    width: 250px;
 }
 
 earnings item time {
